@@ -248,8 +248,6 @@ export default function GoalsPage() {
     setLoading(false);
   };
 
-  useEffect(() => { fetchGoals(); }, [filterStatus]);
-
   const deleteGoal = async (id) => {
     if (!window.confirm('Delete this goal and all its milestones?')) return;
     try {

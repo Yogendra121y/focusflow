@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { timePlannerAPI, tasksAPI } from '../services/api';
+import { timePlannerAPI } from '../services/api';
 import toast from 'react-hot-toast';
 
 const BLOCK_COLORS = ['#6366f1', '#8b5cf6', '#ec4899', '#f97316', '#22c55e', '#0ea5e9', '#f59e0b', '#14b8a6', '#ef4444'];
@@ -101,7 +101,7 @@ export default function TimePlannerPage() {
     setLoading(false);
   };
 
-  useEffect(() => { fetchBlocks(); }, [selectedDate]);
+
 
   const deleteBlock = async (id) => {
     try {

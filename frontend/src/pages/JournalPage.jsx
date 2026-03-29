@@ -128,7 +128,7 @@ export default function JournalPage() {
     setLoading(false);
   };
 
-  useEffect(() => { fetchJournals(); }, [search, filterMood]);
+
 
   const deleteEntry = async (id) => {
     if (!window.confirm('Delete this journal entry?')) return;
@@ -143,7 +143,6 @@ export default function JournalPage() {
   const openEdit = (entry) => { setEditEntry(entry); setEditorOpen(true); };
 
   const getMoodEmoji = (mood) => MOODS.find(m => m.value === mood)?.emoji || '😐';
-  const getMoodColor = (mood) => MOODS.find(m => m.value === mood)?.color || 'text-slate-500';
 
   return (
     <div className="space-y-6">
