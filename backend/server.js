@@ -71,11 +71,8 @@ const startServer = async () => {
   try {
     await sequelize.authenticate();
     console.log('✅ Database connected successfully');
-
-    if (process.env.NODE_ENV === 'development') {
-      await sequelize.sync({ alter: true });
-      console.log('✅ Database models synchronized');
-    }
+    await sequelize.sync({ alter: true });
+    console.log('✅ Database models synchronized');
 
     app.listen(PORT, () => {
       console.log(`🚀 FocusFlow API running on port ${PORT}`);
