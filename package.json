@@ -1,0 +1,25 @@
+{
+  "name": "focusflow",
+  "version": "1.0.0",
+  "description": "FocusFlow - Personal Productivity Dashboard",
+  "private": true,
+  "scripts": {
+    "install:all": "cd backend && npm install && cd ../frontend && npm install",
+    "dev:backend": "cd backend && npm run dev",
+    "dev:frontend": "cd frontend && npm start",
+    "build:frontend": "cd frontend && npm run build",
+    "start:backend": "cd backend && npm start"
+  },
+  "keywords": [
+    "productivity",
+    "dashboard",
+    "react",
+    "nodejs",
+    "mysql"
+  ],
+  "author": "Team Vigil",
+  "license": "MIT",
+  "dependencies": {
+    "nodemailer": "^8.0.4"
+  }
+}
