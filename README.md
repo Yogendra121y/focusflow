@@ -2,11 +2,9 @@
 
 > Full-stack productivity app: React + Node.js + MySQL + JWT Auth
 
----
 
 ## Project Structure
 
-```
 focusflow/
 ├── backend/
 │   ├── controllers/          # Business logic
@@ -67,13 +65,11 @@ focusflow/
     │   └── index.js
     ├── package.json
     └── tailwind.config.js
-```
 
----
 
 ## Database Schema (MySQL)
 
-```sql
+sql
 -- Run this to create your database
 CREATE DATABASE focusflow_db CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
 
@@ -88,9 +84,8 @@ CREATE DATABASE focusflow_db CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
 -- journals       (id UUID PK, userId FK→users, title, content TEXT, mood ENUM, date DATE, wordCount, ...)
 -- productivity_logs (id UUID PK, userId FK→users, date DATE UNIQUE per user, completedTasks, score, ...)
 -- time_blocks    (id UUID PK, userId FK→users, taskId FK→tasks, title, date DATE, startTime, endTime, color, ...)
-```
 
----
+
 
 ## API Reference
 
@@ -152,7 +147,7 @@ CREATE DATABASE focusflow_db CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
 | PUT | `/api/time-planner/:id` | Update block |
 | DELETE | `/api/time-planner/:id` | Delete block |
 
----
+
 
 ## Local Setup
 
@@ -163,21 +158,20 @@ CREATE DATABASE focusflow_db CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
 
 ### 1. Clone & Install
 
-```bash
+```-bash
 git clone <your-repo>
 cd focusflow
-
-# Backend
+```
+```# Backend
 cd backend
 npm install
 cp .env.example .env
 # Edit .env with your MySQL credentials and a secure JWT_SECRET
-
-# Frontend
+```
+```# Frontend
 cd ../frontend
 npm install
 ```
-
 ### 2. Database Setup
 
 ```bash
@@ -365,6 +359,7 @@ server {
 
 ---
 
-Built with ❤️ by Team Vigil
-#   f o c u s f l o w  
+Built with ❤️ by YOGENDRA MEENA
+#   f o c u s f l o w 
+ 
  
